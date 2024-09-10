@@ -1,0 +1,29 @@
+name: sandesh
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+environment:
+  sdk: ^3.5.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  speech_to_text: ^7.0.0  # Update to the latest version
+  flutter_tts: ^4.0.2      # For text-to-speech
+  provider: ^6.0.4         # For state management
+  url_launcher: ^6.3.0     # Downgraded to this version
+  pubnub: ^4.0.0           # Change this line to the available version
+  shared_preferences: ^2.1.1
+  cupertino_icons: ^1.0.8   # Check for the latest version
+
+dependency_overrides:
+  speech_to_text_platform_interface: ^2.2.0  # Ensure this is compatible
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
